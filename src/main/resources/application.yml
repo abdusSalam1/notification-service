@@ -6,6 +6,6 @@ spring:
     consumer:
       bootstrap-servers: localhost:9092
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: com.notification.config.NotificationEventDeserializer
+      value-deserializer: com.notification.config.NotificationEventTopicDeserializer
 server:
   port: 8081

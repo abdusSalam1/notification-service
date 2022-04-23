@@ -1,4 +1,4 @@
-package com.notification.config;
+package com.notification.deserializer;
 
 import com.google.gson.Gson;
 import com.notification.domain.EmailNotificationEvent;
@@ -10,7 +10,7 @@ import org.apache.kafka.common.serialization.Deserializer;
 
 import java.nio.charset.StandardCharsets;
 
-public class NotificationEventDeserializer implements Deserializer {
+public class NotificationEventTopicDeserializer implements Deserializer {
 
     @Override
     public NotificationEvent deserialize(String s, byte[] bytes) {
