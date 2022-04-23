@@ -5,7 +5,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class EmailNotificationListener {
+public class EmailTopicListener {
 
     @KafkaListener(topics = "EMAIL", groupId = "CREATE_ACCOUNT")
     public void listenToEmailTopics(NotificationEvent notificationEvent) {

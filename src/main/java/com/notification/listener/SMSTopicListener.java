@@ -5,7 +5,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SMSNotificationListener {
+public class SMSTopicListener {
 
     @KafkaListener(topics = "SMS", groupId = "CREATE_ACCOUNT")
     public void listenToSMSTopics(NotificationEvent notificationEvent) {
